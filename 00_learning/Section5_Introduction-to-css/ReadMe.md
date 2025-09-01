@@ -1,5 +1,12 @@
 # Notes: 
 
+* Inline style
+* <html style="background:blue"></html>
+* Internal style
+* <style> html {background:red;} </style>
+* This style will change the background in html tags to red
+* External
+* <head> <link rel="stylesheet" href="./styles.css"/> </head>
 * Element selector h1 {color:red}
 * h1 is the header html CSS element selector
 * You can use the attribute class to use class selectors in css

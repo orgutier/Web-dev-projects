@@ -1,5 +1,8 @@
 # Notes: 
 
+* Same previous img element with attribute src
+* No alt attribute but still considered
+* Link to another html using href attribute in <a></a> anchor element
 * <!DOCTYPE html> tells the browser that it is written in html version 5
 * <html lang="en"></html> html element is to separate all the html code in a normal fashion
 * lang attribute in html is to tell automated tools what language the site is targetted to 
