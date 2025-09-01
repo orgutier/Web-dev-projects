@@ -1,0 +1,162 @@
+footer {
+  text-align: right;
+  color: midnightblue;
+  background-color: white;
+  width: 200px;
+  float: right;
+  text-align: center;
+}
+
+  /*Top objects*/
+  /*
+  .main -> img [.logo]
+        -> h1
+        -> .card [.left, .right]  -> img [tile-image]
+                                  -> h2 [.card-title]
+                                  -> p [.card-text]
+  card images are 799x533
+  */
+
+.main {
+  display: grid;
+}
+
+@media (max-width: 960px) {
+  body{
+    background: linear-gradient(to bottom right, blue, pink);;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 600px 600px;
+    gap: 40px;
+  }
+  h1, .logo {
+    grid-column: span 1;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card{
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 50px 150px;
+  }
+  .card > .tile-image{
+    position: relative;
+    grid-row: span 1;
+    align-self: center;
+    justify-self: center;
+    width: 95%; 
+    max-width: 500px;
+    border: 5px solid purple;
+  }
+  .card > .card-title{
+    font-size: 8vw;
+    padding: 0px;
+    margin: 0px;
+    justify-self: center;
+    align-self: self-end;
+  }
+  .card > p {
+    font-size:  4vw;
+    font-weight: 800;
+    color: black;
+    align-self: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1300px) {
+  body{
+    background: linear-gradient(to bottom right, blue, pink);;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 600px 600px;
+    gap: 40px;
+  }
+  h1, .logo {
+    grid-column: span 2;
+    font-size: 5rem;
+  }
+  .card{
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 50px 150px;
+  }
+  .card > .tile-image{
+    position: relative;
+    grid-row: span 1;
+    align-self: center;
+    justify-self: center;
+    width: 95%; 
+    margin: 0px;
+    border: 5px solid purple;
+  }
+  .card > .card-title{
+    font-size: 4vw;
+    padding: 0px;
+    margin: 0px;
+    justify-self: center;
+    align-self: self-end;
+  }
+  .card > p {
+    font-size: 2vw;
+    font-weight: 800;
+    color: black;
+    align-self: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 1301px) {
+  body{
+    background: linear-gradient(to bottom right, blue, pink);;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 400px 400px;
+    gap: 40px;
+  }
+  h1, .logo {
+    grid-column: span 2;
+    font-size: 5rem;
+  }
+  .card{
+    position: static;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 320px;
+  }
+  .card > .tile-image{
+    position: relative;
+    grid-row: span 2;
+    align-self: center;
+    justify-self: center;
+    width: 95%; 
+    margin: 0px;
+    border: 5px solid purple;
+  }
+  .card > .card-title{
+    font-size: 4vw;
+    padding: 0px;
+    margin: 0px;
+    justify-self: center;
+    align-self: self-end;
+  }
+  .card > p {
+    font-size: 1.5vw;
+    font-weight: 800;
+    color: black;
+    text-emphasis-color: blue;
+    align-self: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10%;
+  }
+}
